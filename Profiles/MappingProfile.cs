@@ -9,6 +9,9 @@ namespace HomeAccountingApi.Profiles
     {
         public MappingProfile()
         {
+            CreateMap<AccesToVentilation, 
+                AccesToVentilationDto>().ReverseMap();
+
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<Flat, FlatDto>().ReverseMap();
             CreateMap<Bath, BathDto>().ReverseMap();
